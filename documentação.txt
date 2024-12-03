@@ -1,0 +1,10 @@
+Documentação do projeto Calculadora científica
+
+- Desenvolver essa calculadora foi um desafio. Ao criar uma ferramenta acessível através dos botões de estilo, problemas surgiram, como a falta do padding em certos elementos que estavam deixando a página desorganizada;
+- Esse projeto foi implementado com HTML, CSS e Javascript, com objetivo de realizar cálculos simples de forma eficiente;
+- As alterações no CSS garantiram que os elementos ficassem visíveis e até consistentes. Pra isso, foram usadas classes dinâmicas no elemento <body>, que se alteram junto com o tema selecionado. Com isso, ficou mais prático lidar com as mudanças de estilo sem manualmente ajustar a página;
+- Outra funcionalidade foi o histórico de cálculos. A ideia era que os usuários carregassem respostas de seus cálculos com um clique. Tiveram alguns problemas pra integrar a lógica com a interface já existente, já que ele empurrava os outros elementos para os cantos da página. O uso de arrays pra armazenar os cálculos e padding ajudaram a consertar o histórico e torná-lo um elemento importantíssimo da página;
+- Além disso, no meio do projeto, algumas mudanças foram feitas, como a inclusão de operações científicas (tangente, raiz quadrada, exponenciação, etc.). Essa funcionalidade trouxe consigo parênteses dos quais a calculadora não estava lidando direito;
+- Um problema também significativo, embora menor, foi a legibilidade dos textos no modo escuro e alto-contraste, já que a cor da caixa de resultados não estava mudando. Pra isso, foi adicionada manualmente a alteração da cor nas caixas de #RESULTADO;
+- Nesse projeto, o uso do Git foi essencial, já que permitiu organizar o desenvolvimento do projeto de forma mais eficiente. Cada etapa contou com um commit feito dentro do VSCode que guardou as alterações feitas e permitiu realizar reversões, voltando pro código original;
+- O Git também ajudou a documentar o progresso, que embora não tenha sido usado tanto por estar em uma página pequena, ainda sim, tornou o processo mais eficiente e fácil de se analisar.
