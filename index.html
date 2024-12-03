@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora Sigimples</title>
+  <title>Calculadora Científica</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,33 +12,53 @@
       <button onclick="setTheme('dark')">Modo Escuro</button>
       <button onclick="setTheme('high-contrast')">Alto-Contraste</button>
     </div>
+
+    <!-- Histórico de cálculos -->
+    <div class="history">
+      <h3>Histórico</h3>
+      <ul id="history-list">
+        <!-- Itens do histórico serão adicionados aqui dinamicamente -->
+      </ul>
+    </div>
+
     <div class="container">
-      <h1>Calculadora</h1>
+      <h1>Calculadora Científica</h1>
       <div class="input-container">
         <input type="text" id="resultado" disabled placeholder="Resultado">
       </div>
       <div class="buttons">
+        <!-- Botões de números e operadores -->
         <button onclick="appendNumber(1)">1</button>
         <button onclick="appendNumber(2)">2</button>
         <button onclick="appendNumber(3)">3</button>
-        <button onclick="appendNumber('+')">+</button>
+        <button onclick="appendOperator('+')">+</button>
   
         <button onclick="appendNumber(4)">4</button>
         <button onclick="appendNumber(5)">5</button>
         <button onclick="appendNumber(6)">6</button>
-        <button onclick="appendNumber('-')">-</button>
+        <button onclick="appendOperator('-')">-</button>
   
         <button onclick="appendNumber(7)">7</button>
         <button onclick="appendNumber(8)">8</button>
         <button onclick="appendNumber(9)">9</button>
-        <button onclick="appendNumber('*')">*</button>
+        <button onclick="appendOperator('*')">*</button>
   
         <button onclick="appendNumber(0)">0</button>
         <button onclick="clearResult()">C</button>
         <button onclick="calculateResult()">=</button>
-        <button onclick="appendNumber('/')">/</button>
+        <button onclick="appendOperator('/')">/</button>
+        
+        <!-- Botões adicionais para funções científicas -->
+        <button onclick="appendSquareRoot()">√</button>
+        <button onclick="appendExponent()">^</button>
+        <button onclick="appendTangente()">tan</button>
+        <button onclick="appendFunction('Math.sin')">sin</button>
+        <button onclick="appendFunction('Math.cos')">cos</button>
+        <button onclick="appendFunction('Math.log')">log</button>
+        <button onclick="appendFunction('Math.exp')">exp</button>
+        <button onclick="appendParenthesis()">()</button>
       </div>
     </div>
     <script src="script.js"></script>
-  </body>  
+</body>  
 </html>
