@@ -1,36 +1,31 @@
-/* Corpo da página */
 body {
   font-family: Arial, sans-serif;
   display: flex;
-  justify-content: center; /* Centraliza a calculadora horizontalmente */
-  align-items: center; /* Centraliza a calculadora verticalmente */
-  height: 100vh; /* Ocupa toda a altura da tela */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
   background-color: #f0f0f0;
 }
 
-/* Contêiner da calculadora */
 .container {
   background-color: #fff;
   border-radius: 10px;
   padding: 30px;
   margin-right: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 350px; /* Largura da calculadora */
+  width: 350px;
   position: relative;
 }
 
-/* Título da calculadora */
 h1 {
   text-align: center;
 }
 
-/* Contêiner do campo de resultado */
 .input-container {
   margin-bottom: 20px;
 }
 
-/* Estilo do campo de resultado */
 #resultado {
   width: 100%;
   height: 40px;
@@ -41,10 +36,9 @@ h1 {
   border-radius: 5px;
 }
 
-/* Estilo dos botões */
 .buttons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Organiza os botões em uma grid */
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
@@ -65,7 +59,6 @@ button:active {
   background-color: #ccc;
 }
 
-/* Estilo dos botões de tema */
 .theme-buttons {
   display: flex;
   justify-content: center;
@@ -86,7 +79,6 @@ button:active {
   background-color: #ccc;
 }
 
-/* Estilo do histórico */
 .history {
   margin-top: 20px;
   width: 100%;
@@ -124,7 +116,6 @@ button:active {
   background-color: #e0e0e0;
 }
 
-/* Estilos para os temas */
 body.light {
   background-color: #f0f0f0;
   color: #000;
@@ -171,9 +162,9 @@ body.high-contrast button:hover {
 }
 
 body.dark #resultado {
-  color: #000; /* Preto no tema escuro */
+  color: #000;
 }
 
 body.high-contrast #resultado {
-  color: #000; /* Preto no tema de alto contraste */
+  color: #000;
 }
