@@ -20,3 +20,7 @@ function calculateResult() {
     currentExpression = '';
   }
 }
+
+function setTheme(theme) {
+    document.body.className = theme; // Define a classe do body como o tema selecionado
+  }  
